@@ -38,6 +38,19 @@ module.exports = {
 npm run build
 ```
 
+## Releasing
+Modify package.json with <<version>>
+```bash
+npm run build
+
+git add -f dist
+
+git commit -a -m 'releasing <<version>>'
+
+git tag <<version>>
+
+git reset --hard HEAD~
+```
 
 
 ## Contributing
