@@ -7,7 +7,7 @@ module.exports = {
       exclude: [
         ':root'
       ],
-      prefix: ".form-entry"
+      prefix: ".scoped-bootstrap"
     }
   }
 }

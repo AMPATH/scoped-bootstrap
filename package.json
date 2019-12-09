@@ -1,19 +1,42 @@
 {
-  "name": "scoped-bootstrap",
+  "name": "@ampath-kenya/scoped-bootstrap",
   "version": "1.0.0",
   "scripts": {
-    "build": "rimraf dist && postcss node_modules/bootstrap/dist/css/bootstrap.min.css --config postcss.config.js --output dist/bootstrap.min.css"
+    "build": "rimraf dist && postcss node_modules/bootstrap/dist/css/bootstrap.min.css --config postcss.config.js --output dist/css/bootstrap.min.css && npm run copy-bootstrap-fonts && npm run copy-bootstrap-js",
+    "copy-bootstrap-fonts": "copyfiles -f node_modules/bootstrap/dist/fonts/* dist/fonts/",
+    "copy-bootstrap-js": "copyfiles -f node_modules/bootstrap/dist/js/* dist/js/"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "ampath developers",
+  "license": "MIT",
   "files": [
     "dist"
   ],
   "devDependencies": {
     "autoprefixer": "^9.7.3",
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^3.4.1",
+    "copyfiles": "^2.1.1",
     "postcss-cli": "^6.1.3",
     "postcss-prefix-selector": "^1.7.2",
     "rimraf": "^3.0.0"
-  }
+  },
+  "description": "Scoped Bootstrap is a modified version of bootstrap that solves the styling issue of boostrap where it covers the entire html file and therefore colliding with you own styles. It does it by demanding that any bootstrap component should be used inside a root component that has a class '.scoped-bootstrap'. It may contain issues and bugs it's not been extensively tested.",
+  "main": "README.md",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AMPATH/scoped-bootstrap.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "scoped",
+    "bootstrap",
+    "styling",
+    "bootstrap",
+    "custom",
+    "bootstrap"
+  ],
+  "bugs": {
+    "url": "https://github.com/AMPATH/scoped-bootstrap/issues"
+  },
+  "homepage": "https://github.com/AMPATH/scoped-bootstrap#readme"
 }
