@@ -2,9 +2,9 @@
   "name": "@ampath-kenya/scoped-bootstrap",
   "version": "1.0.0",
   "scripts": {
-    "build": "rimraf dist && postcss node_modules/bootstrap/dist/css/bootstrap.min.css --config postcss.config.js --output dist/css/bootstrap.min.css && npm run copy-bootstrap-fonts && npm run copy-bootstrap-js",
-    "copy-bootstrap-fonts": "copyfiles -f node_modules/bootstrap/dist/fonts/* dist/fonts/",
-    "copy-bootstrap-js": "copyfiles -f node_modules/bootstrap/dist/js/* dist/js/"
+    "build": "rimraf dist && postcss bootstrap/css/bootstrap.min.css --config postcss.config.js --output dist/css/bootstrap.min.css && npm run copy-bootstrap-fonts && npm run copy-bootstrap-js",
+    "copy-bootstrap-fonts": "copyfiles -f bootstrap/fonts/* dist/fonts/",
+    "copy-bootstrap-js": "copyfiles -f bootstrap/js/* dist/js/"
   },
   "author": "ampath developers",
   "license": "MIT",
@@ -13,7 +13,6 @@
   ],
   "devDependencies": {
     "autoprefixer": "^9.7.3",
-    "bootstrap": "^3.4.1",
     "copyfiles": "^2.1.1",
     "postcss-cli": "^6.1.3",
     "postcss-prefix-selector": "^1.7.2",
