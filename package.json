@@ -1,6 +1,6 @@
 {
   "name": "@ampath-kenya/scoped-bootstrap",
-  "version": "1.0.0",
+  "version": "1.0.0-custom1",
   "scripts": {
     "build": "rimraf dist && postcss bootstrap/css/bootstrap.min.css --config postcss.config.js --output dist/css/bootstrap.min.css && npm run copy-bootstrap-fonts && npm run copy-bootstrap-js",
     "copy-bootstrap-fonts": "copyfiles -f bootstrap/fonts/* dist/fonts/",
