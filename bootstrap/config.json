@@ -391,6 +391,7 @@
     "button-groups.less",
     "input-groups.less",
     "labels.less",
+    "panels.less",
     "wells.less"
   ],
   "js": []
